@@ -1,4 +1,4 @@
-from user import User
+from userclass import User
 import random
 import pyperclip
 import string
