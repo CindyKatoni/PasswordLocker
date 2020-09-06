@@ -1,3 +1,7 @@
+from user import User
+import random
+import pyperclip
+import string
 class Credentials():
     
     credentials_array = []
@@ -28,3 +32,13 @@ class Credentials():
             if credential.account_type == account_type:
                 return credential    
 
+    @classmethod
+    def authenticate_user(cls, user_name, password):
+        """
+        This method checks the if the user's name and password are correct
+        """
+        verified_user = ""
+        for user in User.users:
+            if (user.user_name == user_name and user.password == password):
+                verified_user = user.user_name
+            return verified_user    

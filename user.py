@@ -24,7 +24,10 @@ class User():
 
     @classmethod
     def display_user(cls):
-        return cls.users    
+        for user in cls.users:
+            return user
+
+        # return cls.users    
 
     def delete_user(self):
         User.users.remove(self)
