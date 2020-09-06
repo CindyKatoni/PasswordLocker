@@ -42,4 +42,10 @@ def remove_credential(credentials):
     """
     Delete credentials from the credential list
     """
-    credentials.delete_credential()    
+    credentials.delete_credential()  
+
+def display_credential():
+    """
+    Display user's credentials
+    """
+    return Credentials.view_credential()      

@@ -26,13 +26,11 @@ class Credentials():
         Credentials.credentials_array.remove(self)
 
     @classmethod
-    def view_credential(cls, account_type):
+    def view_credential(cls):
         """
         This method is for viewing the account credential and password
         """
-        for credential in cls.credentials_array:
-            if credential.account_type == account_type:
-                return credential
+        return cls.credentials_array
 
     @classmethod
     def authenticate_user(cls, user_name, password):
