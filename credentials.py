@@ -11,7 +11,7 @@ class Credentials():
         self.user_name = user_name
         self.password = password
 
-    def new_credential(self):
+    def save_credential(self):
         """
         Method for storing a new credential
         """
@@ -24,7 +24,7 @@ class Credentials():
         Credentials.credentials_array.remove(self)
 
     @classmethod
-    def view_credentials(cls, account_type):
+    def view_credential(cls, account_type):
         """
         This method is for viewing the account credential and password
         """
