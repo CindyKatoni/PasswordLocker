@@ -31,3 +31,15 @@ def create_newcredential(account_type, usr_name, password):
     """
     new_credential = Credentials(account_type, usr_name, password)
     return new_credential
+
+def retain_credential(credentials):
+    """
+    Save credentials to the credential list
+    """
+    credentials.save_credential()
+
+def remove_credential(credentials):
+    """
+    Delete credentials from the credential list
+    """
+    credentials.delete_credential()    
