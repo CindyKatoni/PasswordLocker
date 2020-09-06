@@ -42,3 +42,17 @@ class Credentials():
             if (user.user_name == user_name and user.password == password):
                 verified_user = user.user_name
             return verified_user    
+
+    @classmethod
+    def random_password(cls):
+        """
+        This method generates a random password
+        """
+        length = 12
+
+
+
+
+
+
+
