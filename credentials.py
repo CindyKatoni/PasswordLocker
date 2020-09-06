@@ -8,9 +8,9 @@ class Credentials():
 
     credentials_array = []
 
-    def __init__(self, account_type, user_name, password):
+    def __init__(self, account_type, usr_name, password):
         self.account_type = account_type
-        self.user_name = user_name
+        self.usr_name = usr_name
         self.password = password
 
     def save_credential(self):

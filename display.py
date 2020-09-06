@@ -1,6 +1,8 @@
 from userclass import User
 from credentials import Credentials
 
+ #_________________________________________USERS____________________________________________________________________
+
 def create_useraccount(user_name, password):
     """
     Creates a new user account.
@@ -20,3 +22,12 @@ def login_user(user_name, password):
     """
     log_user = Credentials.authenticate_user(user_name, password)
     return log_user
+
+ #_________________________________________CREDENTIALS____________________________________________________________________
+
+def create_newcredential(account_type, usr_name, password):
+    """
+    Function for creating new credential for every usr_name
+    """
+    new_credential = Credentials(account_type, usr_name, password)
+    return new_credential
