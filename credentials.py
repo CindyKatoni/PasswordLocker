@@ -18,3 +18,13 @@ class Credentials(self, account_type, user_name, password):
         Method for deleting existing credential
         """
         Credentials.credentials.remove(self)
+
+    @classmethod
+    def view_credentials(cls, account_type):
+        """
+        This method is for viewing the account credential and password
+        """
+        for credential in cls.credentials:
+            if credential.account_type == account_type:
+                return credential    
+
