@@ -2,7 +2,7 @@ import random
 import string
 import pyperclip
 
-class User(self, user_name, password):
+class User():
     """ 
     This is a user class that instantiates new users
     """
